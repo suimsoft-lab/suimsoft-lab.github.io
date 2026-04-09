@@ -1,7 +1,25 @@
 # suimsoft-lab.github.io
 
 `suimsoft-lab`의 GitHub Pages 기반 Jekyll 블로그입니다.  
-앱 개발 과정 기록과 배포 후 운영 안내 문서를 정리합니다.
+앱 개발 과정, 기능 개선 기록, 배포 후 사용자 안내 문서를 정리합니다.
+
+![Jekyll](https://img.shields.io/badge/Jekyll-3.10.0-CC0000?logo=jekyll&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-222222?logo=githubpages&logoColor=white)
+![Ruby](https://img.shields.io/badge/Ruby-3.x-CC342D?logo=ruby&logoColor=white)
+
+## 프로젝트 앱
+
+### 아기첫걸음
+
+출산 직후 필요한 행정 절차/지원금 신청 일정을 한눈에 관리할 수 있는 앱입니다.
+
+[![Google Play에서 보기](https://play.google.com/intl/en_us/badges/static/images/badges/ko_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.babyfirststep.baby_first_step)
+
+### 아이지원
+
+임신·출산·육아 단계별 지원정책을 지역/시기 기준으로 확인할 수 있는 앱입니다.
+
+[![Google Play에서 보기](https://play.google.com/intl/en_us/badges/static/images/badges/ko_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.suimworks.babysupport)
 
 ## 로컬 실행
 
@@ -38,3 +56,8 @@ tags: [flutter, android]
 ## 배포
 
 `main` 브랜치에 푸시하면 GitHub Pages가 자동 빌드/배포합니다.
+
+## 참고
+
+- 블로그 주소: <https://suimsoft-lab.github.io>
+- GitHub 계정: <https://github.com/suimsoft-lab>
