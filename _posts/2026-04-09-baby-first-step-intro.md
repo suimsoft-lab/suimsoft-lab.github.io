@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "아기첫걸음 프로젝트 소개: 출산 후 행정 절차를 놓치지 않도록"
 date: 2026-04-09 10:25:00 +0900
 categories: [project]

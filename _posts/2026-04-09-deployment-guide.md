@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "배포 후 사용자 안내 가이드 템플릿"
 date: 2026-04-09 09:45:00 +0900
 categories: [deployment]

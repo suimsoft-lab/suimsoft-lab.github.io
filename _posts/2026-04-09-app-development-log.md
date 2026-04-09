@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "앱 개발 로그 템플릿"
 date: 2026-04-09 09:40:00 +0900
 categories: [devlog]

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "아이지원 프로젝트 소개: 임신·출산·육아 지원정책을 한눈에"
 date: 2026-04-09 10:40:00 +0900
 categories: [project]

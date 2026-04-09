@@ -1,0 +1,11 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Projects"
+    url: /projects/
+  - title: "Devlog"
+    url: /devlog/
+  - title: "Deployment"
+    url: /deployment/
+  - title: "About"
+    url: /about/
