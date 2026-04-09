@@ -1,0 +1,17 @@
+title: suimsoft-lab Tech Blog
+description: 앱 개발 기록과 배포 후 운영 가이드를 정리하는 기술 블로그
+url: "https://suimsoft-lab.github.io"
+baseurl: ""
+lang: ko-KR
+timezone: Asia/Seoul
+theme: minima
+
+author:
+  name: suimsoft-lab
+
+markdown: kramdown
+permalink: /:categories/:title/
+
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/suimsoft-lab" }
