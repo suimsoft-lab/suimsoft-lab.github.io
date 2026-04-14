@@ -1,5 +1,5 @@
 ---
-title: "사주AI 개인정보처리방침"
+title: "사주담 개인정보처리방침"
 permalink: /saju-app/privacy/
 layout: single
 toc: true
