@@ -3,6 +3,15 @@ main:
     url: /
   - title: "Projects"
     url: /projects/
+    children:
+      - title: "아기첫걸음"
+        url: /projects/#baby-first-step
+      - title: "아이지원"
+        url: /projects/#ijiwon
+      - title: "사주담"
+        url: /projects/#saju-app
+      - title: "HS Finder"
+        url: /projects/#hs-finder
   - title: "Devlog"
     url: /devlog/
   - title: "Deployment"
