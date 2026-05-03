@@ -8,8 +8,6 @@ main:
         url: /projects/#baby-first-step
       - title: "아이지원"
         url: /projects/#ijiwon
-      - title: "사주담"
-        url: /projects/#saju-app
       - title: "HS Finder"
         url: /projects/#hs-finder
   - title: "Devlog"
