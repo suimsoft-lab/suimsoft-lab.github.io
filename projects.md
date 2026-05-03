@@ -2,6 +2,7 @@
 title: "Projects"
 permalink: /projects/
 layout: single
+classes: content-index
 ---
 
 <section class="section-hero">
@@ -9,6 +10,12 @@ layout: single
   <h1>프로젝트</h1>
   <p>앱의 문제 정의, 기능 구성, 운영 문서와 공개 링크를 프로젝트별로 정리합니다.</p>
 </section>
+
+<nav class="project-anchor-nav" aria-label="Project shortcuts">
+{% for project in site.data.projects %}
+  <a href="#{{ project.slug }}">{{ project.name }}</a>
+{% endfor %}
+</nav>
 
 <div class="project-grid project-grid--wide">
 {% for project in site.data.projects %}

@@ -5,12 +5,32 @@ author_profile: false
 ---
 
 <section class="home-hero">
-  <p class="page-chip">suimsoft-lab Tech Blog</p>
-  <h1>모바일 앱을 만들고 운영하며 배운 내용을 기록합니다.</h1>
-  <p>제품 소개, 기술 설계, 배포 운영, 정책 고지 문서를 한곳에서 정리합니다.</p>
+  <p class="page-chip">App · Web · Operations</p>
+  <h1>앱과 웹 제품을 만들고 운영하는 개발 스튜디오입니다.</h1>
+  <p>suimsoft-lab은 모바일 앱과 웹 서비스를 직접 기획, 개발, 배포하며 제품 소개와 기술 기록을 함께 정리합니다.</p>
   <div class="cta-wrap">
     <a class="btn btn--primary" href="/projects/">프로젝트 보기</a>
     <a class="btn btn--inverse" href="/devlog/">개발 로그 보기</a>
+  </div>
+</section>
+
+<section class="content-section content-section--compact">
+  <div class="workstream-grid">
+    <a class="workstream-link" href="/projects/">
+      <span>Product</span>
+      <strong>프로젝트 홍보</strong>
+      <em>앱 소개, 공개 링크, 운영 문서</em>
+    </a>
+    <a class="workstream-link" href="/devlog/">
+      <span>Engineering</span>
+      <strong>개발 기록</strong>
+      <em>구현 과정, 설계 의도, 기술 선택</em>
+    </a>
+    <a class="workstream-link" href="/deployment/">
+      <span>Operations</span>
+      <strong>배포와 운영</strong>
+      <em>릴리즈, 공지, 사후 대응 체크리스트</em>
+    </a>
   </div>
 </section>
 
@@ -32,6 +52,7 @@ author_profile: false
       <p>{{ project.summary }}</p>
       <p class="card-actions">
         <a class="btn btn--primary btn--small" href="{{ project.intro_url | relative_url }}">자세히 보기</a>
+        <a class="btn btn--light-outline btn--small" href="{{ project.docs_url | relative_url }}">운영 문서</a>
         {% if project.play_url %}
           <a class="btn btn--light-outline btn--small" href="{{ project.play_url }}">Google Play</a>
         {% endif %}
@@ -45,6 +66,7 @@ author_profile: false
   <div class="section-heading">
     <p class="page-chip">Recent Notes</p>
     <h2>최신 글</h2>
+    <p>프로젝트 소개, 개발 로그, 배포 운영 기록을 최신순으로 모았습니다.</p>
   </div>
 
 {% assign latest_posts = site.posts | sort: "date" | reverse | slice: 0, 6 %}

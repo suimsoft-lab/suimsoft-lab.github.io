@@ -2,11 +2,12 @@
 layout: single
 title: "About"
 permalink: /about/
+classes: content-index
 ---
 
 <section class="section-hero">
   <p class="page-chip">About suimsoft-lab</p>
-  <h2>제품과 기술을 함께 설명하는 개발 블로그</h2>
+  <h1>제품과 기술을 함께 설명하는 개발 블로그</h1>
   <p>사용자에게는 서비스 가치를, 개발자에게는 구현 의도를 명확히 전달하는 콘텐츠를 지향합니다.</p>
 </section>
 

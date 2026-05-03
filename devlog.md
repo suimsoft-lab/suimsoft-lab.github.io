@@ -2,11 +2,12 @@
 title: "Devlog"
 permalink: /devlog/
 layout: single
+classes: content-index
 ---
 
 <section class="section-hero">
   <p class="page-chip">Developer Notes</p>
-  <h2>설계 의도와 구현 디테일</h2>
+  <h1>설계 의도와 구현 디테일</h1>
   <p>기능 구현 과정, 아키텍처 선택, 트러블슈팅과 성능/운영 관점의 기술 기록을 남깁니다.</p>
 </section>
 
