@@ -7,11 +7,11 @@ classes: content-index
 
 <section class="section-hero">
   <p class="page-chip">About suimsoft-lab</p>
-  <h1>제품과 기술을 함께 설명하는 개발 블로그</h1>
+  <h1>제품과 기술을 함께 설명하는 앱 스튜디오</h1>
   <p>사용자에게는 서비스 가치를, 개발자에게는 구현 의도를 명확히 전달하는 콘텐츠를 지향합니다.</p>
 </section>
 
-<div class="post-grid">
+<div class="post-grid about-grid">
   <article class="post-card">
     <h3>무엇을 만들고 있나요?</h3>
     <p>육아/지원정책 도메인에서 모바일 앱을 기획하고 개발하며 운영하고 있습니다.</p>

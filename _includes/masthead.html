@@ -14,7 +14,7 @@
       <ul class="site-nav-custom__links">
         {%- for link in site.data.navigation.main -%}
           <li class="site-nav-custom__item{% if link.children %} site-nav-custom__item--has-submenu{% endif %}">
-            <a class="site-nav-custom__link" href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>
+            <a class="site-nav-custom__link" href="{{ link.url | relative_url }}"{% if link.children %} aria-haspopup="true"{% endif %}{% if link.description %} title="{{ link.description }}"{% endif %}>
               {{ link.title }}
             </a>
             {% if link.children %}

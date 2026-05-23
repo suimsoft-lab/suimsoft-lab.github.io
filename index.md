@@ -5,12 +5,34 @@ author_profile: false
 ---
 
 <section class="home-hero">
-  <p class="page-chip">App · Web · Operations</p>
-  <h1>앱과 웹 제품을 만들고 운영하는 개발 스튜디오입니다.</h1>
-  <p>suimsoft-lab은 모바일 앱과 웹 서비스를 직접 기획, 개발, 배포하며 제품 소개와 기술 기록을 함께 정리합니다.</p>
-  <div class="cta-wrap">
-    <a class="btn btn--primary" href="/projects/">프로젝트 보기</a>
-    <a class="btn btn--inverse" href="/devlog/">개발 로그 보기</a>
+  <div class="home-hero__layout">
+    <div class="home-hero__copy">
+      <p class="page-chip">App Studio · Product Lab</p>
+      <h1>앱과 웹 제품을 만들고 운영하는 개발 스튜디오입니다.</h1>
+      <p>suimsoft-lab은 모바일 앱과 웹 서비스를 직접 기획, 개발, 배포하며 제품 소개와 기술 기록을 함께 정리합니다.</p>
+      <div class="cta-wrap" aria-label="주요 이동 링크">
+        <a class="btn btn--primary" href="/projects/">프로젝트 보기</a>
+        <a class="btn btn--inverse" href="/devlog/">개발 로그 보기</a>
+      </div>
+    </div>
+
+    <div class="studio-panel" aria-label="suimsoft-lab 제품 현황">
+      <div class="studio-panel__header">
+        <span>Live Products</span>
+        <strong>{{ site.data.projects | size }}</strong>
+      </div>
+      <div class="studio-panel__list">
+      {% for project in site.data.projects %}
+        <a class="studio-product studio-product--{{ project.accent }}" href="{{ project.intro_url | relative_url }}">
+          <span class="studio-product__mark" aria-hidden="true">{{ project.name | slice: 0 }}</span>
+          <span>
+            <strong>{{ project.name }}</strong>
+            <em>{{ project.category }} · {{ project.status }}</em>
+          </span>
+        </a>
+      {% endfor %}
+      </div>
+    </div>
   </div>
 </section>
 
@@ -44,6 +66,7 @@ author_profile: false
   <div class="project-grid">
   {% for project in site.data.projects %}
     <article class="project-card project-card--{{ project.accent }}" id="{{ project.slug }}">
+      <span class="project-card__mark" aria-hidden="true">{{ project.name | slice: 0 }}</span>
       <p class="project-card__meta">
         <span>{{ project.category }}</span>
         <span>{{ project.status }}</span>

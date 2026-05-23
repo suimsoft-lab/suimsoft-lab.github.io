@@ -7,7 +7,7 @@ classes: content-index
 
 <section class="section-hero">
   <p class="page-chip">Project Showcase</p>
-  <h1>프로젝트</h1>
+  <h1>운영 중인 제품과 공개 문서</h1>
   <p>앱의 문제 정의, 기능 구성, 운영 문서와 공개 링크를 프로젝트별로 정리합니다.</p>
 </section>
 
@@ -20,6 +20,7 @@ classes: content-index
 <div class="project-grid project-grid--wide">
 {% for project in site.data.projects %}
   <article class="project-card project-card--{{ project.accent }}" id="{{ project.slug }}">
+    <span class="project-card__mark" aria-hidden="true">{{ project.name | slice: 0 }}</span>
     <p class="project-card__meta">
       <span>{{ project.category }}</span>
       <span>{{ project.status }}</span>
