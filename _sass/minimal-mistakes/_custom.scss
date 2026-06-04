@@ -837,6 +837,195 @@ body {
   color: var(--primary);
 }
 
+.hs-showcase {
+  margin: 2.4rem 0 3rem;
+  padding: 1.25rem;
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  scroll-margin-top: 5.5rem;
+}
+
+.hs-showcase__hero {
+  display: grid;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.hs-showcase__copy h2 {
+  max-width: 780px;
+  margin-top: 0.55rem;
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.8rem, 4vw, 3.1rem);
+  font-weight: 850;
+  line-height: 1.12;
+}
+
+.hs-showcase__copy p {
+  max-width: 720px;
+}
+
+.hs-showcase__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.hs-showcase__visual {
+  display: grid;
+  justify-items: center;
+  padding: 0.9rem;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(15, 118, 110, 0.1)),
+    var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.hs-showcase__visual img {
+  width: min(100%, 21rem);
+  max-height: 42rem;
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.hs-showcase__notice {
+  display: grid;
+  gap: 0.25rem;
+  margin: 1rem 0 1.4rem;
+  padding: 0.9rem 1rem;
+  background: rgba(180, 83, 9, 0.1);
+  border: 1px solid rgba(180, 83, 9, 0.28);
+  border-radius: var(--radius);
+}
+
+.hs-showcase__notice strong {
+  color: var(--amber);
+}
+
+.hs-showcase__notice span {
+  color: var(--muted);
+}
+
+.hs-showcase__section {
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.hs-showcase__section > p {
+  max-width: 840px;
+}
+
+.hs-feature-grid,
+.hs-screenshot-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.hs-feature {
+  padding: 1rem;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.hs-feature h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
+}
+
+.hs-feature p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.hs-steps {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  counter-reset: hs-step;
+  list-style: none;
+}
+
+.hs-steps li {
+  position: relative;
+  min-height: 4.6rem;
+  padding: 0.9rem 1rem 0.9rem 3.35rem;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--muted);
+  counter-increment: hs-step;
+}
+
+.hs-steps li::before {
+  content: counter(hs-step);
+  position: absolute;
+  top: 0.95rem;
+  left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  background: var(--primary);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.hs-steps strong {
+  display: block;
+  margin-bottom: 0.22rem;
+  color: var(--text-strong);
+}
+
+.hs-screenshot-grid figure {
+  margin: 0;
+}
+
+.hs-screenshot-grid img {
+  display: block;
+  width: 100%;
+  max-height: 34rem;
+  object-fit: contain;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.hs-screenshot-grid figcaption {
+  margin-top: 0.45rem;
+  color: var(--subtle);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.hs-keywords {
+  display: grid;
+  gap: 0.25rem;
+  max-width: 840px;
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  background: rgba(15, 118, 110, 0.1);
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  border-radius: var(--radius);
+}
+
+.hs-keywords strong {
+  color: var(--teal);
+}
+
+.hs-keywords span {
+  color: var(--muted);
+}
+
 .about-grid .post-card {
   min-height: 10.5rem;
 }
@@ -945,6 +1134,15 @@ div.highlighter-rouge {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hs-showcase__hero {
+    grid-template-columns: minmax(0, 1.35fr) minmax(17rem, 0.65fr);
+  }
+
+  .hs-feature-grid,
+  .hs-screenshot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .latest-grid,
   .post-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -966,6 +1164,10 @@ div.highlighter-rouge {
 
   .workstream-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hs-feature-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
