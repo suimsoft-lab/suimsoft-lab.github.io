@@ -17,6 +17,7 @@ permalink: /:categories/:title/
 
 plugins:
   - jekyll-include-cache
+  - jekyll-sitemap
 
 defaults:
   - scope:
