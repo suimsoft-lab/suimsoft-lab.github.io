@@ -19,9 +19,9 @@
 - name: "HS Finder"
   slug: "hs-finder"
   category: "무역 도구"
-  status: "문서 공개"
+  status: "Android 지원"
   summary: "상품 이미지를 바탕으로 HS 코드 분석을 돕는 업무 보조형 모바일 서비스입니다."
   intro_url: "/projects/#hs-finder"
   docs_url: "/hs-finder/privacy-policy/"
-  play_url:
+  play_url: "https://play.google.com/store/apps/details?id=com.suimworks.hscode_assistant"
   accent: "rose"

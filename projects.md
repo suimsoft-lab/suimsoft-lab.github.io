@@ -49,8 +49,12 @@ classes: content-index
       </p>
       <div class="hs-showcase__actions">
         <a class="btn btn--primary" href="#hs-finder-how-to">사용 방법 보기</a>
+        <a class="btn btn--light-outline" href="https://play.google.com/store/apps/details?id=com.suimworks.hscode_assistant">Google Play</a>
         <a class="btn btn--light-outline" href="/hs-finder/privacy-policy/">개인정보처리방침</a>
       </div>
+      <p>
+        Android 앱은 Google Play에서 다운로드할 수 있습니다. iOS는 아직 지원하지 않습니다.
+      </p>
     </div>
     <div class="hs-showcase__visual" aria-label="HS Finder 앱 화면">
       <img src="{{ '/assets/images/hs-finder/home.jpg' | relative_url }}" alt="HS Finder 홈 화면">
