@@ -23,7 +23,7 @@ header:
 
 <div class="project-grid project-grid--wide">
 {% for project in site.data.projects %}
-  <article class="project-card project-card--{{ project.accent }}" id="{% if project.slug == 'baby-first-step' or project.slug == 'ijiwon' or project.slug == 'hs-finder' %}{{ project.slug }}-card{% else %}{{ project.slug }}{% endif %}">
+  <article class="project-card project-card--{{ project.accent }}" id="{{ project.slug }}-card">
     <span class="project-card__mark" aria-hidden="true">{{ project.name | slice: 0 }}</span>
     <p class="project-card__meta">
       <span>{{ project.category }}</span>
