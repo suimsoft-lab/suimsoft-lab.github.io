@@ -1,8 +1,12 @@
 ---
-title: "Projects"
+title: "운영 중인 앱 프로젝트"
 permalink: /projects/
 layout: single
 classes: content-index
+description: "suimsoft-lab이 운영 중인 아기첫걸음, 아이지원, HS Finder 앱의 핵심 기능, Google Play 링크, 개인정보처리방침과 운영 문서를 모아 둔 프로젝트 소개 페이지입니다."
+excerpt: "아기첫걸음, 아이지원, HS Finder 앱의 기능, Google Play 링크, 운영 문서를 한곳에서 확인하세요."
+header:
+  og_image: /assets/images/baby-first-step/home.png
 ---
 
 <section class="section-hero">
@@ -437,6 +441,219 @@ classes: content-index
       <strong>추천 검색 키워드</strong>
       <span>HS 코드, HS Code, 품목분류, 수출입, 통관, 관세, 무역 실무, 제품 분류, AI 무역 도구</span>
     </div>
+  </div>
+</section>
+
+<section class="tarot-showcase" id="onulmaum-tarot">
+  <div class="tarot-showcase__hero">
+    <div class="tarot-showcase__copy">
+      <p class="page-chip">오늘의 마음 타로</p>
+      <h2>마음이 복잡한 날, 카드로 가볍게 정리해보는 온라인 타로</h2>
+      <p>
+        오늘의 마음 타로는 연애 타로, 연락운 타로, 재회 타로, 고백 타로, 오늘의 운세 타로처럼 자주 궁금해지는 주제를
+        한국어 리딩으로 정리해주는 웹 서비스입니다. Google 로그인 후 기본 리딩을 하루 3회 무료로 볼 수 있고,
+        더 자세한 설명이 필요할 때만 AI 타로 해석을 선택할 수 있습니다.
+      </p>
+      <div class="tarot-showcase__actions">
+        <a class="btn btn--primary" href="https://www.onulmaumtarot.kr">서비스 바로가기</a>
+        <a class="btn btn--light-outline" href="#onulmaum-tarot-how-to">사용 방법 보기</a>
+        <a class="btn btn--light-outline" href="#onulmaum-tarot-blog-kit">블로그 홍보 문구</a>
+      </div>
+      <div class="tarot-stats" aria-label="오늘의 마음 타로 요약">
+        <span><strong>78장</strong> 메이저와 마이너 카드 기반 리딩</span>
+        <span><strong>하루 3회</strong> Google 로그인 후 기본 리딩 무료</span>
+        <span><strong>AI 해석</strong> 필요할 때만 추가로 자세한 리딩</span>
+      </div>
+    </div>
+    <div class="tarot-phone" aria-label="오늘의 마음 타로 화면 예시">
+      <div class="tarot-phone__bar">
+        <strong>오늘의 마음 타로</strong>
+        <span>연애, 연락, 재회, 오늘의 운세</span>
+      </div>
+      <div class="tarot-card-fan">
+        <img src="{{ '/assets/images/onulmaum-tarot/card-back.png' | relative_url }}" alt="">
+        <img src="{{ '/assets/images/onulmaum-tarot/the-star.png' | relative_url }}" alt="별 카드 예시">
+        <img src="{{ '/assets/images/onulmaum-tarot/card-back.png' | relative_url }}" alt="">
+      </div>
+      <div class="tarot-phone__panel">
+        <span>오늘의 질문</span>
+        <p>지금 내 마음에 필요한 조언은?</p>
+      </div>
+      <div class="tarot-phone__panel">
+        <span>리딩 결과</span>
+        <p>상황을 단정하지 않고, 지금 살펴볼 포인트를 부드럽게 정리합니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tarot-showcase__notice">
+    <strong>이용 안내</strong>
+    <span>
+      타로 리딩은 자기성찰과 엔터테인먼트를 위한 참고 콘텐츠입니다. 의료, 법률, 투자, 정신건강처럼 중요한 의사결정은
+      관련 전문가와 상의하는 것을 권장합니다.
+    </span>
+  </div>
+
+  <div class="tarot-showcase__section">
+    <div class="section-heading">
+      <p class="page-chip">Blog Title Ideas</p>
+      <h2>네이버 블로그에 쓰기 좋은 제목</h2>
+    </div>
+    <div class="tarot-promo-grid">
+      <article>
+        <h3>연락운이 궁금한 날</h3>
+        <p>연락 기다리다 마음 복잡할 때, 온라인 타로로 가볍게 정리해보기</p>
+      </article>
+      <article>
+        <h3>무료 타로 후기형</h3>
+        <p>Google 로그인 후 하루 3회 무료, 오늘의 마음 타로 사용해본 느낌</p>
+      </article>
+      <article>
+        <h3>연애 고민형</h3>
+        <p>썸, 재회, 고백 고민을 한 번에 볼 수 있는 온라인 타로 사이트</p>
+      </article>
+      <article>
+        <h3>오늘의 운세형</h3>
+        <p>출근 전 1분, 오늘의 운세 타로로 마음 정리하는 방법</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="tarot-showcase__section" id="onulmaum-tarot-how-to">
+    <div class="section-heading">
+      <p class="page-chip">How To Use</p>
+      <h2>사용 방법은 간단합니다</h2>
+    </div>
+    <ol class="tarot-steps">
+      <li>
+        <strong>사이트에 접속합니다.</strong>
+        브라우저에서 <a href="https://www.onulmaumtarot.kr">www.onulmaumtarot.kr</a> 주소로 들어갑니다.
+      </li>
+      <li>
+        <strong>보고 싶은 주제를 고릅니다.</strong>
+        오늘의 타로, Yes/No 타로, 연애 3카드, 연락운, 재회, 고백, 직장운, 금전운 등 상황에 맞는 메뉴를 선택합니다.
+      </li>
+      <li>
+        <strong>질문을 떠올리고 카드를 선택합니다.</strong>
+        “지금 내가 먼저 연락해도 괜찮을까?”처럼 구체적인 질문으로 시작하면 리딩을 더 쉽게 읽을 수 있습니다.
+      </li>
+      <li>
+        <strong>기본 리딩 결과를 확인합니다.</strong>
+        Google 로그인 후 기본 리딩은 하루 3회 무료로 볼 수 있습니다.
+      </li>
+      <li>
+        <strong>필요할 때만 AI 해석을 추가합니다.</strong>
+        기본 결과보다 더 자세한 설명이 필요할 때 AI 타로 해석을 선택하면 됩니다.
+      </li>
+    </ol>
+  </div>
+
+  <div class="tarot-showcase__section" id="onulmaum-tarot-blog-kit">
+    <div class="section-heading">
+      <p class="page-chip">Naver Blog Copy</p>
+      <h2>블로그 홍보 본문 초안</h2>
+      <p>아래 문구는 네이버 블로그 본문에 맞춰 다듬어 사용할 수 있도록 구성했습니다.</p>
+    </div>
+    <div class="tarot-copy">
+      <p>
+        마음이 복잡할 때는 누군가에게 바로 털어놓기도 어렵고, 혼자 계속 생각하다 보면 같은 고민만 반복하게 되는 것 같아요.
+        그럴 때 가볍게 참고해볼 수 있는 온라인 타로 사이트로 <strong>오늘의 마음 타로</strong>를 소개해봅니다.
+      </p>
+      <p>
+        오늘의 마음 타로는 연애 타로, 연락운 타로, 재회 타로, 고백 타로, 오늘의 운세 타로처럼 자주 궁금해지는 주제별 메뉴가
+        따로 정리되어 있습니다. 질문을 고르고 카드를 선택하면 기본 리딩 결과를 볼 수 있고, Google 로그인 후에는 기본 리딩을
+        하루 3회 무료로 이용할 수 있습니다.
+      </p>
+      <p>
+        좋았던 점은 결과가 무조건적인 예언처럼 나오기보다, 지금 상황에서 어떤 부분을 차분히 봐야 하는지 정리해주는 느낌이라는 점입니다.
+        특히 연락을 기다리거나, 썸인지 아닌지 헷갈리거나, 재회를 고민하는 상황에서는 마음을 한 번 정돈하는 데 도움이 됩니다.
+      </p>
+      <p>
+        기본 리딩을 본 뒤 더 자세한 해석이 필요하면 AI 타로 해석도 선택할 수 있습니다. 꼭 필요한 기능은 아니지만,
+        선택한 카드와 질문을 바탕으로 조금 더 긴 설명을 보고 싶을 때 사용하면 좋습니다.
+      </p>
+    </div>
+  </div>
+
+  <div class="tarot-showcase__section">
+    <div class="section-heading">
+      <p class="page-chip">Capture Frames</p>
+      <h2>캡처해서 홍보 이미지로 쓰기 좋은 프레임</h2>
+      <p>대표 이미지와 카드뉴스 느낌의 정사각형 프레임을 페이지 안에 함께 배치했습니다.</p>
+    </div>
+    <div class="tarot-capture-grid">
+      <article>
+        <div class="tarot-capture tarot-capture--wide">
+          <div>
+            <span>하루 3회 무료 기본 리딩</span>
+            <h3>연락 기다리다 마음 복잡한 날</h3>
+            <p>오늘의 마음 타로에서 카드 한 장으로 지금의 흐름을 가볍게 정리해보세요.</p>
+          </div>
+          <div class="tarot-capture__cards" aria-hidden="true">
+            <img src="{{ '/assets/images/onulmaum-tarot/the-lovers.png' | relative_url }}" alt="">
+            <img src="{{ '/assets/images/onulmaum-tarot/the-star.png' | relative_url }}" alt="">
+            <img src="{{ '/assets/images/onulmaum-tarot/the-sun.png' | relative_url }}" alt="">
+          </div>
+        </div>
+        <p>블로그 대표 이미지나 본문 상단 이미지로 사용하기 좋은 1200x630 계열 구성입니다.</p>
+      </article>
+      <article>
+        <div class="tarot-capture tarot-capture--square">
+          <span>오늘의 마음 타로</span>
+          <h3>사용 방법은 간단해요</h3>
+          <p>1. 주제 선택<br>2. 질문 떠올리기<br>3. 카드 선택<br>4. 기본 리딩 확인<br>5. 필요하면 AI 해석 추가</p>
+          <small>www.onulmaumtarot.kr</small>
+        </div>
+        <p>블로그 본문 중간에 카드뉴스처럼 삽입하기 좋은 정사각형 구성입니다.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="tarot-showcase__section">
+    <div class="section-heading">
+      <p class="page-chip">Topics</p>
+      <h2>주제별 메뉴 소개</h2>
+    </div>
+    <ul class="tarot-topic-list">
+      <li>오늘의 타로: 하루의 흐름과 조언</li>
+      <li>Yes / No 타로: 지금 질문의 현재 흐름</li>
+      <li>연애 3카드: 현재 상황, 관계 흐름, 조언</li>
+      <li>연락운 타로: 연락 가능성과 내가 취할 태도</li>
+      <li>재회 타로: 과거 관계와 다시 연결될 가능성</li>
+      <li>고백 타로: 고백 전 확인해볼 마음의 준비</li>
+      <li>직장운 타로: 일과 커리어 방향</li>
+      <li>금전운 타로: 이번 달 재정 흐름</li>
+    </ul>
+  </div>
+
+  <div class="tarot-showcase__section">
+    <div class="section-heading">
+      <p class="page-chip">Hashtags</p>
+      <h2>추천 해시태그</h2>
+    </div>
+    <ul class="tarot-tag-list">
+      <li>#무료타로</li>
+      <li>#온라인타로</li>
+      <li>#오늘의타로</li>
+      <li>#연애타로</li>
+      <li>#연락운타로</li>
+      <li>#재회타로</li>
+      <li>#썸타로</li>
+      <li>#고백타로</li>
+      <li>#직장운타로</li>
+      <li>#금전운타로</li>
+      <li>#AI타로</li>
+      <li>#타로사이트</li>
+      <li>#타로후기</li>
+      <li>#마음정리</li>
+      <li>#오늘의마음타로</li>
+    </ul>
+  </div>
+
+  <div class="tarot-showcase__cta">
+    <strong>오늘 마음이 복잡하다면, 무료 타로로 가볍게 정리해보세요.</strong>
+    <span>오늘의 마음 타로에서 기본 리딩을 하루 3회 무료로 볼 수 있습니다.</span>
+    <a class="btn btn--primary" href="https://www.onulmaumtarot.kr">오늘의 마음 타로 보러가기</a>
   </div>
 </section>
 
