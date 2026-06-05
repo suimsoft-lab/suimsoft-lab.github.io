@@ -1,9 +1,14 @@
 ---
 layout: single
 title: "아기첫걸음 소개: 출산 후 행정 절차와 지원금 일정을 한눈에"
+description: "아기첫걸음은 출생일 기준으로 출생신고, 건강보험 등록, 부모급여, 아동수당 등 출산 후 행정 절차와 지원금 신청 일정을 정리하는 Android 앱입니다."
+excerpt: "출생일 기준으로 출산 후 행정 절차와 지원금 신청 일정을 정리하는 Android 앱, 아기첫걸음을 소개합니다."
 date: 2026-04-09 10:25:00 +0900
 categories: [project]
 tags: [flutter, mobile, parenting, gov-benefit, baby-first-step]
+app_slug: baby-first-step
+header:
+  og_image: /assets/images/baby-first-step/home.png
 ---
 
 <section class="section-hero">

@@ -1,9 +1,14 @@
 ---
 layout: single
 title: "아이지원 소개: 임신·출산·육아 지원정책을 한눈에"
+description: "아이지원은 임신, 출산, 육아 단계별 공공 지원정책을 지역과 생애주기 기준으로 탐색하고 공식 신청 경로를 확인할 수 있는 Android 앱입니다."
+excerpt: "임신, 출산, 육아 단계별 공공 지원정책을 지역과 시기 기준으로 찾는 Android 앱, 아이지원을 소개합니다."
 date: 2026-04-09 10:40:00 +0900
 categories: [project]
 tags: [flutter, mobile, policy, parenting, baby-support, ijiwon]
+app_slug: ijiwon
+header:
+  og_image: /assets/images/ijiwon/home.png
 ---
 
 <section class="section-hero">

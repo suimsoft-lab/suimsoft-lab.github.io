@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "배포 후 사용자 안내 가이드 템플릿"
+description: "앱 배포 후 릴리즈 정보, 사용자 안내 문구, 알려진 이슈, 운영 체크리스트를 정리하기 위한 가이드 템플릿입니다."
+excerpt: "앱 배포 후 사용자 공지와 운영 체크리스트를 빠르게 정리하기 위한 가이드 템플릿입니다."
 date: 2026-04-09 09:45:00 +0900
 categories: [deployment]
 tags: [release, notice, operations]

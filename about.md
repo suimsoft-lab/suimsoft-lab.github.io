@@ -1,8 +1,10 @@
 ---
 layout: single
-title: "About"
+title: "suimsoft-lab 소개"
 permalink: /about/
 classes: content-index
+description: "suimsoft-lab은 육아 행정, 지원정책, 무역 도구 영역의 모바일 앱을 기획·개발·운영하는 앱 스튜디오입니다."
+excerpt: "육아 행정, 지원정책, 무역 도구 영역의 모바일 앱을 기획·개발·운영하는 앱 스튜디오입니다."
 ---
 
 <section class="section-hero">

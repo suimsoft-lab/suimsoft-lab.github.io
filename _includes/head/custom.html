@@ -1,0 +1,128 @@
+<meta name="theme-color" content="#0f766e">
+
+{% assign absolute_url = page.url | absolute_url %}
+{% assign page_description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": {{ site.url | append: "/#organization" | jsonify }},
+  "name": {{ site.title | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "logo": {{ site.logo | absolute_url | jsonify }},
+  "sameAs": [
+    "https://github.com/suimsoft-lab",
+    "https://play.google.com/store/apps/details?id=com.babyfirststep.baby_first_step",
+    "https://play.google.com/store/apps/details?id=com.suimworks.babysupport",
+    "https://play.google.com/store/apps/details?id=com.suimworks.hscode_assistant"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": {{ site.url | append: "/#website" | jsonify }},
+  "name": {{ site.title | jsonify }},
+  "alternateName": "suimsoft-lab App Studio",
+  "url": {{ site.url | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "inLanguage": "ko-KR",
+  "publisher": {
+    "@id": {{ site.url | append: "/#organization" | jsonify }}
+  }
+}
+</script>
+
+{% unless page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ site.url | append: "/" | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.title | default: site.title | jsonify }},
+      "item": {{ absolute_url | jsonify }}
+    }
+  ]
+}
+</script>
+{% endunless %}
+
+{% if page.url == "/projects/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "suimsoft-lab 운영 앱 프로젝트",
+  "description": {{ page_description | jsonify }},
+  "url": {{ absolute_url | jsonify }},
+  "itemListElement": [
+    {% for project in site.data.projects %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": {{ project.name | jsonify }},
+        "applicationCategory": {{ project.category | jsonify }},
+        "operatingSystem": {{ project.operating_system | default: "Android" | jsonify }},
+        "description": {{ project.seo_description | default: project.summary | jsonify }},
+        "url": {{ project.intro_url | absolute_url | jsonify }},
+        "image": {{ project.image | absolute_url | jsonify }},
+        "downloadUrl": {{ project.play_url | jsonify }},
+        "identifier": {{ project.package_name | jsonify }},
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW"
+        },
+        "publisher": {
+          "@id": {{ site.url | append: "/#organization" | jsonify }}
+        }
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+{% if page.app_slug %}
+{% assign current_app = site.data.projects | where: "slug", page.app_slug | first %}
+{% if current_app %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ current_app.name | jsonify }},
+  "applicationCategory": {{ current_app.category | jsonify }},
+  "operatingSystem": {{ current_app.operating_system | default: "Android" | jsonify }},
+  "description": {{ current_app.seo_description | default: current_app.summary | jsonify }},
+  "url": {{ absolute_url | jsonify }},
+  "image": {{ current_app.image | absolute_url | jsonify }},
+  "downloadUrl": {{ current_app.play_url | jsonify }},
+  "identifier": {{ current_app.package_name | jsonify }},
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "KRW"
+  },
+  "publisher": {
+    "@id": {{ site.url | append: "/#organization" | jsonify }}
+  }
+}
+</script>
+{% endif %}
+{% endif %}

@@ -1,6 +1,6 @@
 title: suimsoft-lab
-subtitle: App Studio
-description: 모바일 앱 제품과 개발 기록, 배포 후 운영 가이드를 정리하는 앱 스튜디오
+subtitle: 모바일 앱 개발 스튜디오
+description: 아기첫걸음, 아이지원, HS Finder 등 모바일 앱 제품 소개와 개발 기록, 배포 후 운영 가이드를 정리하는 앱 스튜디오입니다.
 url: "https://suimsoft-lab.github.io"
 baseurl: ""
 lang: ko-KR
@@ -8,9 +8,30 @@ timezone: Asia/Seoul
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"
 locale: "ko-KR"
+title_separator: "|"
+masthead_title: "suimsoft-lab"
+
+repository: "suimsoft-lab/suimsoft-lab.github.io"
+logo: "/assets/images/ijiwon/home.png"
+og_image: "/assets/images/ijiwon/home.png"
+
+social:
+  type: Organization
+  name: suimsoft-lab
+  links:
+    - "https://github.com/suimsoft-lab"
+    - "https://play.google.com/store/apps/details?id=com.babyfirststep.baby_first_step"
+    - "https://play.google.com/store/apps/details?id=com.suimworks.babysupport"
+    - "https://play.google.com/store/apps/details?id=com.suimworks.hscode_assistant"
 
 author:
   name: suimsoft-lab
+  bio: "모바일 앱을 기획, 개발, 배포하며 제품 소개와 운영 기록을 정리합니다."
+  location: "Seoul, Korea"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/suimsoft-lab"
 
 markdown: kramdown
 permalink: /:categories/:title/

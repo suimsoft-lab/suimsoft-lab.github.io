@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "앱 개발 로그 템플릿"
+description: "모바일 앱 기능 구현 과정, 상태 관리, 라우팅, 데이터 계층 설계와 트러블슈팅을 기록하기 위한 개발 로그 템플릿입니다."
+excerpt: "모바일 앱 기능 구현 과정과 아키텍처 결정을 기록하기 위한 개발 로그 템플릿입니다."
 date: 2026-04-09 09:40:00 +0900
 categories: [devlog]
 tags: [app, flutter, architecture]

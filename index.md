@@ -1,6 +1,10 @@
 ---
 layout: splash
-title: "모바일 앱 개발과 운영 기록"
+title: "모바일 앱 개발 스튜디오"
+description: "아기첫걸음, 아이지원, HS Finder 등 Android 앱 제품 소개와 개발·배포·운영 기록을 정리하는 suimsoft-lab 공식 웹사이트입니다."
+excerpt: "아기첫걸음, 아이지원, HS Finder 등 Android 앱 제품 소개와 개발·배포·운영 기록을 정리합니다."
+header:
+  og_image: /assets/images/ijiwon/home.png
 author_profile: false
 ---
 

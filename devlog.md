@@ -1,8 +1,10 @@
 ---
-title: "Devlog"
+title: "개발 로그"
 permalink: /devlog/
 layout: single
 classes: content-index
+description: "suimsoft-lab 모바일 앱의 기능 구현 과정, 아키텍처 선택, 트러블슈팅과 성능·운영 관점의 개발 기록을 정리합니다."
+excerpt: "모바일 앱 기능 구현, 아키텍처 선택, 트러블슈팅과 운영 관점의 개발 기록입니다."
 ---
 
 <section class="section-hero">

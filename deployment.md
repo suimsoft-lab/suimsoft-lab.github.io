@@ -1,8 +1,10 @@
 ---
-title: "Deployment"
+title: "배포와 운영"
 permalink: /deployment/
 layout: single
 classes: content-index
+description: "Android 앱 배포 후 릴리즈 공지, 사용자 안내, 운영 체크리스트와 사후 대응 가이드를 정리합니다."
+excerpt: "앱 배포 후 릴리즈 공지, 사용자 안내, 운영 체크리스트와 사후 대응 가이드입니다."
 ---
 
 <section class="section-hero">
