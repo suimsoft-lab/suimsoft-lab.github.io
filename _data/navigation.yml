@@ -10,6 +10,8 @@ main:
         url: /projects/#ijiwon
       - title: "HS Finder"
         url: /projects/#hs-finder
+      - title: "오늘의 마음 타로"
+        url: /projects/#onulmaum-tarot
   - title: "Devlog"
     url: /devlog/
   - title: "Deployment"

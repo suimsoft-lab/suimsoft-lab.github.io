@@ -79,7 +79,7 @@ author_profile: false
       <p>{{ project.summary }}</p>
       <p class="card-actions">
         <a class="btn btn--primary btn--small" href="{{ project.intro_url | relative_url }}">자세히 보기</a>
-        <a class="btn btn--light-outline btn--small" href="{{ project.docs_url | relative_url }}">운영 문서</a>
+        <a class="btn btn--light-outline btn--small" href="{% if project.docs_url contains '://' %}{{ project.docs_url }}{% else %}{{ project.docs_url | relative_url }}{% endif %}">{% if project.operating_system == "Web" %}서비스 바로가기{% else %}운영 문서{% endif %}</a>
         {% if project.play_url %}
           <a class="btn btn--light-outline btn--small" href="{{ project.play_url }}">Google Play</a>
         {% endif %}

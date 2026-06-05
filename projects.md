@@ -33,7 +33,7 @@ header:
     <p>{{ project.summary }}</p>
     <p class="card-actions">
       <a class="btn btn--primary btn--small" href="{{ project.intro_url | relative_url }}">소개 보기</a>
-      <a class="btn btn--light-outline btn--small" href="{{ project.docs_url | relative_url }}">운영 문서</a>
+      <a class="btn btn--light-outline btn--small" href="{% if project.docs_url contains '://' %}{{ project.docs_url }}{% else %}{{ project.docs_url | relative_url }}{% endif %}">{% if project.operating_system == "Web" %}서비스 바로가기{% else %}운영 문서{% endif %}</a>
       {% if project.play_url %}
         <a class="btn btn--light-outline btn--small" href="{{ project.play_url }}">Google Play</a>
       {% endif %}
@@ -457,7 +457,7 @@ header:
       <div class="tarot-showcase__actions">
         <a class="btn btn--primary" href="https://www.onulmaumtarot.kr">서비스 바로가기</a>
         <a class="btn btn--light-outline" href="#onulmaum-tarot-how-to">사용 방법 보기</a>
-        <a class="btn btn--light-outline" href="#onulmaum-tarot-blog-kit">블로그 홍보 문구</a>
+        <a class="btn btn--light-outline" href="#onulmaum-tarot-topics">주제별 메뉴 보기</a>
       </div>
       <div class="tarot-stats" aria-label="오늘의 마음 타로 요약">
         <span><strong>78장</strong> 메이저와 마이너 카드 기반 리딩</span>
@@ -496,25 +496,25 @@ header:
 
   <div class="tarot-showcase__section">
     <div class="section-heading">
-      <p class="page-chip">Blog Title Ideas</p>
-      <h2>네이버 블로그에 쓰기 좋은 제목</h2>
+      <p class="page-chip">Reading Themes</p>
+      <h2>복잡한 마음을 주제별로 나눠 볼 수 있습니다</h2>
     </div>
     <div class="tarot-promo-grid">
       <article>
-        <h3>연락운이 궁금한 날</h3>
-        <p>연락 기다리다 마음 복잡할 때, 온라인 타로로 가볍게 정리해보기</p>
+        <h3>연애와 관계 흐름</h3>
+        <p>썸, 연애, 재회, 고백처럼 관계에서 자주 떠오르는 질문을 카드 리딩으로 차분히 정리합니다.</p>
       </article>
       <article>
-        <h3>무료 타로 후기형</h3>
-        <p>Google 로그인 후 하루 3회 무료, 오늘의 마음 타로 사용해본 느낌</p>
+        <h3>연락을 기다리는 순간</h3>
+        <p>상대의 연락 가능성만 단정하기보다 지금 내가 살펴볼 태도와 흐름을 함께 보여줍니다.</p>
       </article>
       <article>
-        <h3>연애 고민형</h3>
-        <p>썸, 재회, 고백 고민을 한 번에 볼 수 있는 온라인 타로 사이트</p>
+        <h3>오늘의 운세와 조언</h3>
+        <p>하루를 시작하기 전 지금의 기분, 주의할 점, 가볍게 참고할 조언을 확인할 수 있습니다.</p>
       </article>
       <article>
-        <h3>오늘의 운세형</h3>
-        <p>출근 전 1분, 오늘의 운세 타로로 마음 정리하는 방법</p>
+        <h3>AI 타로 해석</h3>
+        <p>기본 리딩보다 더 자세한 설명이 필요할 때 선택한 카드와 질문을 바탕으로 긴 해석을 제공합니다.</p>
       </article>
     </div>
   </div>
@@ -548,46 +548,40 @@ header:
     </ol>
   </div>
 
-  <div class="tarot-showcase__section" id="onulmaum-tarot-blog-kit">
+  <div class="tarot-showcase__section">
     <div class="section-heading">
-      <p class="page-chip">Naver Blog Copy</p>
-      <h2>블로그 홍보 본문 초안</h2>
-      <p>아래 문구는 네이버 블로그 본문에 맞춰 다듬어 사용할 수 있도록 구성했습니다.</p>
+      <p class="page-chip">Reading Style</p>
+      <h2>결과는 단정 대신 정리에 가깝게 보여줍니다</h2>
     </div>
     <div class="tarot-copy">
       <p>
-        마음이 복잡할 때는 누군가에게 바로 털어놓기도 어렵고, 혼자 계속 생각하다 보면 같은 고민만 반복하게 되는 것 같아요.
-        그럴 때 가볍게 참고해볼 수 있는 온라인 타로 사이트로 <strong>오늘의 마음 타로</strong>를 소개해봅니다.
+        오늘의 마음 타로는 선택한 카드의 의미를 바탕으로 현재 상황에서 살펴볼 포인트를 한국어 문장으로 정리합니다.
+        결과는 미래를 확정적으로 말하기보다, 사용자가 자신의 마음과 선택지를 돌아볼 수 있도록 부드러운 조언 형태로 구성됩니다.
       </p>
       <p>
-        오늘의 마음 타로는 연애 타로, 연락운 타로, 재회 타로, 고백 타로, 오늘의 운세 타로처럼 자주 궁금해지는 주제별 메뉴가
-        따로 정리되어 있습니다. 질문을 고르고 카드를 선택하면 기본 리딩 결과를 볼 수 있고, Google 로그인 후에는 기본 리딩을
-        하루 3회 무료로 이용할 수 있습니다.
+        기본 리딩은 Google 로그인 후 하루 3회 무료로 이용할 수 있습니다. 더 긴 설명이나 질문에 맞춘 세부 해석이 필요할 때만
+        AI 타로 해석을 추가로 선택하면 됩니다.
       </p>
       <p>
-        좋았던 점은 결과가 무조건적인 예언처럼 나오기보다, 지금 상황에서 어떤 부분을 차분히 봐야 하는지 정리해주는 느낌이라는 점입니다.
-        특히 연락을 기다리거나, 썸인지 아닌지 헷갈리거나, 재회를 고민하는 상황에서는 마음을 한 번 정돈하는 데 도움이 됩니다.
-      </p>
-      <p>
-        기본 리딩을 본 뒤 더 자세한 해석이 필요하면 AI 타로 해석도 선택할 수 있습니다. 꼭 필요한 기능은 아니지만,
-        선택한 카드와 질문을 바탕으로 조금 더 긴 설명을 보고 싶을 때 사용하면 좋습니다.
+        연애, 연락, 재회, 고백, 직장운, 금전운 등 메뉴별 질문 흐름이 나뉘어 있어 처음 접속한 사용자도 상황에 맞는 리딩을
+        빠르게 시작할 수 있습니다.
       </p>
     </div>
   </div>
 
   <div class="tarot-showcase__section">
     <div class="section-heading">
-      <p class="page-chip">Capture Frames</p>
-      <h2>캡처해서 홍보 이미지로 쓰기 좋은 프레임</h2>
-      <p>대표 이미지와 카드뉴스 느낌의 정사각형 프레임을 페이지 안에 함께 배치했습니다.</p>
+      <p class="page-chip">Service Flow</p>
+      <h2>카드를 고르고 결과를 바로 확인합니다</h2>
+      <p>질문을 떠올린 뒤 카드를 선택하면 기본 리딩이 먼저 제공되고, 필요한 경우에만 AI 해석으로 더 자세히 이어갈 수 있습니다.</p>
     </div>
     <div class="tarot-capture-grid">
       <article>
         <div class="tarot-capture tarot-capture--wide">
           <div>
             <span>하루 3회 무료 기본 리딩</span>
-            <h3>연락 기다리다 마음 복잡한 날</h3>
-            <p>오늘의 마음 타로에서 카드 한 장으로 지금의 흐름을 가볍게 정리해보세요.</p>
+            <h3>처음에는 기본 리딩으로 가볍게</h3>
+            <p>Google 로그인 후 하루 3회까지 기본 리딩을 무료로 확인할 수 있습니다.</p>
           </div>
           <div class="tarot-capture__cards" aria-hidden="true">
             <img src="{{ '/assets/images/onulmaum-tarot/the-lovers.png' | relative_url }}" alt="">
@@ -595,21 +589,21 @@ header:
             <img src="{{ '/assets/images/onulmaum-tarot/the-sun.png' | relative_url }}" alt="">
           </div>
         </div>
-        <p>블로그 대표 이미지나 본문 상단 이미지로 사용하기 좋은 1200x630 계열 구성입니다.</p>
+        <p>연애, 연락, 재회처럼 마음이 복잡해지는 주제도 한 번에 길게 단정하지 않고 현재 흐름과 조언을 나눠 보여줍니다.</p>
       </article>
       <article>
         <div class="tarot-capture tarot-capture--square">
           <span>오늘의 마음 타로</span>
-          <h3>사용 방법은 간단해요</h3>
+          <h3>필요할 때만 AI 해석</h3>
           <p>1. 주제 선택<br>2. 질문 떠올리기<br>3. 카드 선택<br>4. 기본 리딩 확인<br>5. 필요하면 AI 해석 추가</p>
           <small>www.onulmaumtarot.kr</small>
         </div>
-        <p>블로그 본문 중간에 카드뉴스처럼 삽입하기 좋은 정사각형 구성입니다.</p>
+        <p>기본 리딩만으로 부족할 때 선택한 카드와 질문에 맞춘 더 자세한 설명을 이어서 볼 수 있습니다.</p>
       </article>
     </div>
   </div>
 
-  <div class="tarot-showcase__section">
+  <div class="tarot-showcase__section" id="onulmaum-tarot-topics">
     <div class="section-heading">
       <p class="page-chip">Topics</p>
       <h2>주제별 메뉴 소개</h2>
@@ -623,30 +617,6 @@ header:
       <li>고백 타로: 고백 전 확인해볼 마음의 준비</li>
       <li>직장운 타로: 일과 커리어 방향</li>
       <li>금전운 타로: 이번 달 재정 흐름</li>
-    </ul>
-  </div>
-
-  <div class="tarot-showcase__section">
-    <div class="section-heading">
-      <p class="page-chip">Hashtags</p>
-      <h2>추천 해시태그</h2>
-    </div>
-    <ul class="tarot-tag-list">
-      <li>#무료타로</li>
-      <li>#온라인타로</li>
-      <li>#오늘의타로</li>
-      <li>#연애타로</li>
-      <li>#연락운타로</li>
-      <li>#재회타로</li>
-      <li>#썸타로</li>
-      <li>#고백타로</li>
-      <li>#직장운타로</li>
-      <li>#금전운타로</li>
-      <li>#AI타로</li>
-      <li>#타로사이트</li>
-      <li>#타로후기</li>
-      <li>#마음정리</li>
-      <li>#오늘의마음타로</li>
     </ul>
   </div>
 
